@@ -1,0 +1,135 @@
+50% duty and min on time 0.0001
+-----------------------------------------
+3 mm/s - 400 steps - loud, buzzy, jerky
+4 mm/s better but still quite buzzy
+5 mm/s also better just a bit buzzy
+6 mm/s similar to 5
+7 mm/s stalls, no movement
+8 mm/s stalls, no movement
+9 mm/s stalls, no movement
+10 mm/s stalls, no movement
+-----------------------------------------
+25% duty and min on time 0.0001
+-----------------------------------------
+3 mm/s - 400 steps - loud, buzzy, jerky
+4 mm/s better but still a bit buzzy
+5 mm/s better, just a tiny bit of buzz
+6 mm/s fairly smooth but background buzz vibration
+7 mm/s fairly smooth but background buzz vibration
+8 mm/s fairly smooth but background buzz vibration
+9 mm/s fairly smooth but background buzz vibration
+10 mm/s  stalls, no movement
+
+SO FAR: seems the 0.001 lower limit on delay time really is needed
+-----------------------------------------
+No set duty and min on time 0.0001
+-----------------------------------------
+3 mm/s - 400 steps - loud, grinding, jerky
+4 mm/s loud, buzzy, jerky
+5 mm/s better but still quite buzzy
+6 mm/s better but still a bit buzzy
+7 mm/s better but still a bit buzzy
+8 mm/s better but still a bit buzzy
+9 mm/s better but still a bit buzzy
+10 mm/s OK
+12 & up stalls
+-----------------------------------------
+15% duty and min on time 0.0001
+-----------------------------------------
+3-5 buzzy 6-10 ok
+
+CONCLUSIONS: 0.001 is true off-time limit, likely need to stick to strict speed set because addressing this with the current equipment is impractical
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+TESTING DIFFERENT DUTY CYCLES BY SPEED
+GOAL: find optimal (low-vibration) settings for each integer speed in feasible range
+-----------------------------------------
+10 mm/s and min on time 0.00001
+-----------------------------------------
+50% stalls (off time under 0.001)
+40% stalls (off time under 0.001)
+30% stalls (off time under 0.001)
+25% stalls (off time under 0.001)
+20% is OK *
+15% is OK *
+10% is OK *
+05% is OK *
+-----------------------------------------
+9 mm/s and min on time 0.00001
+-----------------------------------------
+50% stalls (off time under 0.001)
+40% stalls (off time under 0.001)
+30% stalls (off time under 0.001)
+25% is OK
+20% is OK
+15% is OK **
+10% is OK
+05% is OK
+-----------------------------------------
+8 mm/s and min on time 0.00001
+-----------------------------------------
+* note: none are great, really *
+50% stalls (off time under 0.001)
+40% stalls (off time under 0.001)
+30% is OK
+25% is OK
+20% is OK
+15% is OK
+10% is OK
+05% is OK, slightly more vibration maybe
+-----------------------------------------
+7 mm/s and min on time 0.00001
+-----------------------------------------
+50% stalls (off time under 0.001)
+40% is OK **
+30% is OK
+25% is OK
+20% is OK
+15% is OK
+10% is OK
+05% is OK
+-----------------------------------------
+6 mm/s and min on time 0.00001
+-----------------------------------------
+* note: 55 and 45 are both better than 50% *
+50% is loud and grinding, maybe skipping steps
+40% is OK **
+30% is OK, bit louder
+25% is OK, bit louder
+20% is OK, bit louder
+15% is OK, bit louder
+10% is OK, bit louder
+05% is OK, bit louder
+-----------------------------------------
+5 mm/s and min on time 0.00001
+-----------------------------------------
+50% makes a dull grinding (skipping steps?)
+40% makes a dull grinding (skipping steps?)
+30% sounds better, still a bit buzzy **
+25% sounds better, still a bit buzzy
+20% sounds quite bad, definitely missing steps
+15% sounds quite bad, definitely missing steps
+10% sounds quite bad, definitely missing steps
+05% sounds quite bad, definitely missing steps
+-----------------------------------------
+4 mm/s and min on time 0.00001
+-----------------------------------------
+50% sounds noisy
+40% sounds noisy
+30% sounds noisier & resonant
+25% sounds noisy
+20% sounds noisy **
+15% sounds noisy
+10% sounds noisy
+05% sounds noisy
+-----------------------------------------
+3 mm/s and min on time 0.00001
+-----------------------------------------
+* note: high values lik 90 work better but still skipping *
+50% is loud and grinding, definitely skipping steps
+40% is loud and grinding, definitely skipping steps
+30% is loud and grinding, definitely skipping steps
+25% is loud and grinding, definitely skipping steps
+20% is loud and grinding, definitely skipping steps
+15% is loud and grinding, definitely skipping steps
+10% is loud and grinding, definitely skipping steps
+05% is loud and grinding, definitely skipping steps
